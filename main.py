@@ -12,10 +12,10 @@ from contants import COLUMNAS
 class Pedidos:
     def __init__(self) -> None:
         self.archivos_raw = sorted(list(OFICINA_PATH.rglob("Ped *.txt")))
-        print(self.archivos_raw)
 
 
-    def limpiar(self) -> pd.DataFrame: # type: ignore
+    def limpiar(self) -> list[pd.DataFrame]: # type: ignore
+        lista_df = []
 
         for archivo_raw in self.archivos_raw:
             try:
@@ -26,7 +26,7 @@ class Pedidos:
                     )
                 
                 file_size = len(df)
-                
+
                 df = df.drop([0, file_size-1, file_size-2]) # elimino todo, dejo colo la tabla principal
                 df = df.rename(columns=COLUMNAS)
 
@@ -52,20 +52,19 @@ class Pedidos:
 
 
                     self.guardar_excel_formateado(df, archivo_raw, nombre_salida) 
-                    return df
-                return pd.DataFrame()
+                    lista_df.append(df)
             except Exception as e:
                 print(f"No se puede procesar el archivo {archivo_raw.name} -> {e}")
-                return pd.DataFrame()
+        return lista_df
 
 
-    def filtrar(self, df: pd.DataFrame, tipo_filtro: TipoPedido) -> None:
+    def filtrar(self, lista_df: list[pd.DataFrame], tipo_filtro: TipoPedido) -> None:
         archivos_formateados = sorted(list(OFICINA_XLSX_PATH.rglob("TODOS *.xlsx")))
         
         try:
             codigos = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{tipo_filtro}.xlsx", dtype={"Codigos": str})["Codigos"]
             
-            for archivo_form, archivo_raw in zip(archivos_formateados, self.archivos_raw):
+            for df, archivo_form, archivo_raw in zip(lista_df, archivos_formateados, self.archivos_raw):
                 df["Articulo"] = df["Articulo"].astype(str).str.strip()
 
                 pertenece = df["Articulo"].isin(codigos)
