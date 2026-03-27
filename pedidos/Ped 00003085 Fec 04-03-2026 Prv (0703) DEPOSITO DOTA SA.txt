@@ -1,0 +1,206 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+NOTA DE PEDIDO : 00003085                    FECHA : 04/03/2026                    Para: 2 PAÑOL LA NORIA               
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.        R. SOCIAL : DEPOSITO DOTA                                                  
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+004.00006   7891200229710                AEROSOL W80 LUBRICANTE 245G 440CM3             50.00                           
+005.00005                                RETIRO RESIDUOS SOLIDOS CON HIDROCARBURO     1000.00                           
+005.00008                                ASERRIN ECOLOGICO POR BOLSA 20 KG              50.00                           
+005.00034   PROCLEAN                     DESENGRASANTE 1:10  XLT X20LT                 600.00                           
+005.00036   DEGRASS 2                    DETERGENTE AL 15%  X LITRO (X20LTS)           100.00                           
+005.00037                                DESINFECTANTE AYUDIN EN AEROSOL                24.00                           
+005.00037                                DESINFECTANTE AYUDIN EN AEROSOL                12.00                           
+005.00039   VER FOTO                     DISPENSER JABON LIQUIDO ACRILICO 500CC          2.00                           
+005.00045                                FILTRO URINAL PARA MIGITORIOS                  90.00                           
+005.00093   PRESENTACION BIDON X 20LTS   CLORO AL 20 % X LITRO (BIDON X 20)            100.00                           
+008.00144   TB 1394/16X                  FILTRO SECADOR GOBERNADOR APU TB1394/16X      108.00                           
+008.00152   WK1060/6X                    FILTRO GASOIL C/TRAMPA SCANIA WK1060/6X        20.00                           
+008.00153   PU941X                       FILTRO GASOIL SCANIA  PU941X                   20.00                           
+008.00161   HU1077/2Z                    FILTRO ACEITE SCANIA HU1077/2Z ARTICULA        20.00                           
+009.00078                                ALTERNADOR 24V 110A ISL 2 OREJAS REP            2.00                           
+009.00307                                ALTERNADOR AGRALE 3 OREJAS REPARADO            16.00                           
+010.00075                                LAMPARA OPTICA H7 24V "CRITICO"                80.00                           
+011.00010   DZE                          MINI RELAY 24V INVERSOR " RALUX" 173           10.00                           
+011.00158                                FICHA 8 VIAS HEMBRA C/TERMINALES MACHO         10.00                           
+011.00248   GW                           PRECINTO Nº 4                                2500.00                           
+011.00252                                PRECINTO Nº 8                                1000.00                           
+011.00402   6009001022008                BULBO TEMPERATURA CUMM4C ELECTRONICO            2.00                           
+011.00434   ORO 1008                     FICHA 3 VIAS MACHO C/TERMINAL HEMBRA           20.00                           
+011.00465                                ARANDELA ANTISULFATANTE (X UNIDAD)            100.00                           
+011.00552   GEN ROD                      FUSIBLE FICHA 7.5 AMP GEN ROD                 100.00                           
+011.00577   AMARILLOS                    PORTALAMPARA 1 POLO FARO 630/7                 24.00                           
+011.00639   AP 613                       FARO 730 CRISTAL AP                            10.00                           
+011.00761                                CPU CONTROL PLT 2019 REPARADO                   6.00                           
+011.00773   AP700 LED CISTAL             FARO AP700 LED CRISTAL RETROMARCHA             50.00                           
+011.00794   LED 77                       FARO 550 LED ROJO 24V                          10.00                           
+011.00895                                LED EN TIRA CON GUIA TB MT17 350CM 24V         20.00                           
+011.01001   POR BATERIA                  RETIRO BATERIA C/CERTIFICADO X UNIDAD          39.00                           
+011.02013   HDBW3200FP-M-028B-S5         CAMARA DOMO 3200 INTERIOR NUEVA                 4.00                           
+015.00081   CONTITECH 13 X 1165          CORREA 13 X 1165 SIMPLE A/A                    80.00                           
+094.00053                                PLACA RESPALDO GIA ROJO C/LOGO CORTA           70.00                           
+098.00048   FERVI AIR                    PULMON SUSPENSION 01-0010 FERVI                48.00                           
+098.00175   KEVLAR                       MANGUERA CALEFAC KEVLAR INT 19MM X METRO      100.00                           
+098.00305                                FLEXIBLE POLIAMIDA 5/8 POR METRO              100.00                           
+098.00537   6007005545008                CONEX CODO AUT 16 P/POLIA 12 (ORIGINAL)       150.00                           
+098.00574   6007005543003                CONEX AUT CODO 12X1.5 X 6MM GOBERNADOR         50.00                           
+098.00592   DSNU-40-200-P-A              PISTON PUERTA FESTO LARGO                       4.00                           
+101.00242                                CAJA DERIVACION DIRECCION AGRALE REPARAD        2.00                           
+104.00232                                BULON 12X50MM                                  50.00                           
+104.00616   T800                         TAPA TANQUE GASOIL EXTERIOR PLASTICA           20.00                           
+104.00628                                MANIJA PORTON LATERAL PUNTA CUADRADA            2.00                           
+104.00696                                TEFLON EN CINTA 3/4 (ROLLO 20MTS)              20.00                           
+104.00825   RM8100                       SUNCHO P/ MATAFUEGO 5KG                         5.00                           
+104.00957   ANGOSTA                      APOYA CABEZAS 13CM (BASE CHICA) "CRITICO        1.00                           
+104.01088                                ESTERILLADO CHOFER M/N DEL PLATA REP           20.00                           
+104.01285   NEGRO                        PARKER 6X1" NEGRO                             400.00                           
+105.00086                                MATAFUEGO 5 KILOS RECAMBIO                     40.00                           
+106.00002   MOTA E616                    BOCALLAVE 16MM HEXAGONAL ENC 1/2                1.00                           
+106.00006   MOTA E12                     LLAVE 12MM COMBINADA                            4.00                           
+106.00007   MOTA E16                     LLAVE 16MM COMBINADA                            3.00                           
+106.00012   PAPAIZ                       CANDADO CR40                                    2.00                           
+106.00015   NEUMATICAS DE 1/2"           CONEXION AIRE TALLER NIPLE MACHO 1/2"          20.00                           
+106.00018                                ARCO SIERRA CHICO                               3.00                           
+106.00019   MOTA Q620-Q630               PICO DE LORO 10"                                3.00                           
+106.00022   MOTA E10                     LLAVE 10MM COMBINADA                            3.00                           
+106.00025   MOTA E07                     LLAVE 7MM COMBINADA                             2.00                           
+106.00026   MOTA E17                     LLAVE 17MM COMBINADA                            2.00                           
+106.00027   MOTA E19                     LLAVE 19MM COMBINADA                            3.00                           
+106.00028   MOTA E22                     LLAVE 22MM COMBINADA                            2.00                           
+106.00030   MOTA E613                    BOCALLAVE 13MM HEXAGONAL ENC 1/2                3.00                           
+106.00041   MOTA E617                    BOCALLAVE 17MM HEXAGONAL ENC 1/2                3.00                           
+106.00042   MOTA E619                    BOCALLAVE 19MM HEXAGONAL ENC 1/2                3.00                           
+106.00045   MOTA E11                     LLAVE 11MM COMBINADA                            3.00                           
+106.00048   APROX 45X24X23 ALTO          CAJA HERRAMIENTA METALICA Nº6                   2.00                           
+106.00054   MOTA E08                     LLAVE 8MM COMBINADA                             3.00                           
+106.00055   MOTA E13                     LLAVE 13MM COMBINADA                            3.00                           
+106.00060   MOTA LQ92                    JUEGO LLAVES ALLEN MILIMETRICAS                 3.00                           
+106.00070   BAHCO 815RN                  LLAVE CRIQUE ENC 1/2                            4.00                           
+106.00076   MOTA Q207                    ALICATE 7"                                      5.00                           
+106.00086   MOTA E14                     LLAVE 14MM COMBINADA                            3.00                           
+106.00100   BAHCO S 8                    BOCALLAVE 8MM HEXAGONAL ENC 1/2                 3.00                           
+106.00108   MOTA E615                    BOCALLAVE 15MM HEXAGONAL ENC 1/2                4.00                           
+106.00127   MOTA E15                     LLAVE 15MM COMBINADA                            2.00                           
+106.00147   BAHCO                        BOCALLAVE 13/16" ESTRIADO ENC 1/2               1.00                           
+106.00170   MOTA LTM13                   LLAVE T 13MM LARGA                              2.00                           
+106.00173                                TESTER USO INTENSIVO TIPO DT9205A               3.00                           
+106.00191   MOTA Q308                    PINZA DE PUNTA 200MM / 8"                       3.00                           
+106.00198   MOTA LTM10                   LLAVE T 10MM LARGA                              2.00                           
+106.00235   MOTA E612                    BOCALLAVE 12MM HEXAGONAL ENC 1/2                3.00                           
+106.00245   MOTA E611                    BOCALLAVE 11MM HEXAGONAL ENC 1/2                3.00                           
+106.00276                                MARCADOR INDUSTRIAL AMARILLO O BLANCO           2.00                           
+106.00341   MOTA EP23                    ALARGUE BOCALLAVE 1/2" CORTO 7.5CM              3.00                           
+106.00360   MOTA Q510                    PINZA DE FUERZA 10"                             2.00                           
+106.00496   SATA                         LLAVE T 8MM CORTA                               2.00                           
+106.00499                                MASCARA P/SOLDAR FOTOSENSIBLE                   1.00                           
+106.00574   MOTA EW313                   LLAVE 13MM COMBINADA C/CRIQUE                   3.00                           
+106.00578   MOTA EW308                   LLAVE 8MM COMBINADA C/CRIQUE                    2.00                           
+106.00579   MOTA EW310                   LLAVE 10MM COMBINADA C/CRIQUE                   2.00                           
+106.00589                                ACEITE HERRAMIENTAS NEUMATICAS X LITRO          2.00                           
+106.00679                                BATERIA 9V RECARGABLE                           3.00                           
+106.00717   CREMARRAS                    CREMA LIMPIAMANOS X 4KG                         2.00                           
+106.00906   JR-2200                      PINZA COCODRILO GRANDE 200AMP JR-2200           2.00                           
+106.00985                                MAZA  2KG                                       1.00                           
+106.00993   MOTA DPH115                  DESTORNILLADOR PHILIPS 6 X 150                  4.00                           
+106.01112   BAHCO                        BOCALLAVE 10MM HEXAGONAL LARGA ENC 1/2          3.00                           
+106.01135   MOTA EP26                    ALARGUE BOCALLAVE 1/2" MEDIANO 12.5CM           3.00                           
+106.01136   MOTA EP625                   ALARGUE BOCALLAVE 1/2" LARGO  25CM              3.00                           
+106.02383   MOTA DPL0615                 DESTORNILLADOR PLANO 6 X 150                    3.00                           
+106.02674   MOTA C218                    CUTTER TRINCHETA REFORZADA (HOJA 18MM)          3.00                           
+106.02813   106.2813                     REMACHADORA CINTA DE  FRENO REPARADA            1.00                           
+106.03090                                TAPA INODORO UNIVERSAL MADERA BLANCA            2.00                           
+106.03996   BOSCH GSB 18V-50             TALADRO BATERIA GSB 18V-50 2 BAT+CARG           4.00                           
+109.00052   6112006009002                CONEX RAPIDA GASOIL AGRALE 90°                 50.00                           
+110.00057   6112008056001                SOPORTE TENSOR DELANTERO INFERIOR NUEVO         1.00                           
+111.00010   FRASLE                       CINTA TRASERA AGRALE STD 4710 "CRITICO"       200.00                           
+111.00037   6012005054001                RESORTE PATIN GRANDE AGRALE MT12              100.00                           
+111.00043   6012005061006                RETEN LEVA FRENO AGRALE                         4.00                           
+111.00047   6012005060008                BUJE LEVA FRENO AGRALE                          4.00                           
+111.00112                                SEGURO PICO CAÑONERA AGRALE M/N EJE EATO       10.00                           
+111.00408                                MAZA TRASERA MT17 EJE DANA CON ABS REP          2.00                           
+111.00501   6022009094002                BULON RUEDA TRASERA FRENO DISCO                30.00                           
+112.00027   6012011021002                FLOTANTE GASOIL AGRALE CORTO 210/300LTS        10.00                           
+112.00067   6012007021008                COLUMNA DIRECCION COMPLETA AGRALE               1.00                           
+112.00212   6010007056008                COLUMNA DIRECCION AGRALE 2106-11               10.00                           
+112.00570                                MANIJA PORTON LATERAL PUNTA ALLEN 3/8           2.00                           
+112.00576   RAM 4                        RAMPA DISCAPACITADOS TB CHATA NUEVA             1.00                           
+113.00108   C/90 T6XM1/8 INST.BCE        CODO RAPIDO BRONCE TAPA COMP.AGRALE             5.00                           
+123.00016   CONO 5/8                     CONO PALIER AGRALE MT17                       100.00                           
+123.00017   TUERCA 5/8                   TUERCA 5/8 PALIER AGRALE MT17                 100.00                           
+123.00028   3177507                      FUELLE NEUMATICO SCANIA 3177507                 4.00                           
+123.00119                                BANANA MT17 EURO V MERITOR IZQ REPARADA         1.00                           
+125.00067   22X1.5                       TUERCA BULON BUGGI MT17 HEXAGONAL AGRALE       50.00                           
+128.00005   CV21037                      MANGUERA MWM 4C MT17 ENFRIADOR CAJA             1.00                           
+130.00001   PAMPERO                      PANTALON DE TRABAJO N°38 VERDE OLIVA            7.00                           
+130.00002   PAMPERO                      PANTALON DE TRABAJO N°40 VERDE OLIVA           19.00                           
+130.00003   PAMPERO                      PANTALON DE TRABAJO N°42 VERDE OLIVA           37.00                           
+130.00004   PAMPERO                      PANTALON DE TRABAJO N°44 VERDE OLIVA           47.00                           
+130.00005   PAMPERO                      PANTALON DE TRABAJO N°46 VERDE OLIVA           60.00                           
+130.00006   PAMPERO                      PANTALON DE TRABAJO N°48 VERDE OLIVA           34.00                           
+130.00007   PAMPERO                      PANTALON DE TRABAJO N°50 VERDE OLIVA           41.00                           
+130.00008   PAMPERO                      PANTALON DE TRABAJO N°52 VERDE OLIVA           21.00                           
+130.00009   PAMPERO                      PANTALON DE TRABAJO N°54 VERDE OLIVA           10.00                           
+130.00010   PAMPERO                      PANTALON DE TRABAJO N°56 VERDE OLIVA            9.00                           
+130.00011   PAMPERO                      PANTALON DE TRABAJO N°58 VERDE OLIVA            4.00                           
+130.00012   PAMPERO                      PANTALON DE TRABAJO N°60 VERDE OLIVA            4.00                           
+130.00016   PAMPERO                      CAMISA DE TRABAJO N°38 VERDE OLIVA             18.00                           
+130.00017   PAMPERO                      CAMISA DE TRABAJO N°40 VERDE OLIVA             42.00                           
+130.00018   PAMPERO                      CAMISA DE TRABAJO N°42 VERDE OLIVA             79.00                           
+130.00019   PAMPERO                      CAMISA DE TRABAJO N°44 VERDE OLIVA             67.00                           
+130.00020   PAMPERO                      CAMISA DE TRABAJO N°46 VERDE OLIVA             30.00                           
+130.00021   PAMPERO                      CAMISA DE TRABAJO N°48 VERDE OLIVA             25.00                           
+130.00022   PAMPERO                      CAMISA DE TRABAJO N°50 VERDE OLIVA             11.00                           
+130.00023   PAMPERO                      CAMISA DE TRABAJO N°52 VERDE OLIVA              7.00                           
+130.00024   PAMPERO                      CAMISA DE TRABAJO N°54 VERDE OLIVA              2.00                           
+130.00025   PAMPERO                      CAMISA DE TRABAJO N°56 VERDE OLIVA              2.00                           
+130.00061                                BOTIN DE TRABAJO N°43                           1.00                           
+131.00012   1779383                      VARILLA MEDIR ACEITE SCANIA                     2.00                           
+132.00130   AGO283                       SOPORTE BASE COMPRES A/A OMEGA SOLO             6.00                           
+132.00135   LIFTGATE 15351               AMORTIGUADOR TAPA A/A LIFTGATE 15351           20.00                           
+132.00200                                ALTERNADOR A/A GRANDE REPARADO                  6.00                           
+132.00242                                DISPLAY MANDO A/A CLIMABUS GLB-142 REP          1.00                           
+132.01004   17592                        MOTOR EVAP BITURBO 3 PINES CON BASE NVO        40.00                           
+136.00022   6022501099004                JUNTA CATALIZADOR CUMM EURO V                   4.00                           
+136.00026   6112007067009                MANGUERA MT17 EURO V MENOR DIA TACHO HID        2.00                           
+136.00043   4936201                      INYECTOR DOSIFICADOR UREA EURO V NUEVO          5.00                           
+136.00046   C90 MF 12X1.5 X T6 PLASTIC   CODO BASE FILTRO SECADOR UREA 12X1.5 T6        12.00                           
+136.00065   6021301043006                BOMBA DOSIFICADORA UREA EURO V NVA              6.00                           
+136.00066   6025101048008                ABRAZADERA ESCP ENTRADA CATALIZ EURO V          6.00                           
+136.00067   APROX 85 X 90                COLA ESCAPE EURO V                              4.00                           
+136.00105   6020006022000                BASE FILTRO GASOIL CARTUCHO TRAMPA M/N          5.00                           
+136.00148                                POLEA DAMPER EURO V (5256136) REPARADA          1.00                           
+139.00014   6112009305001                SEGURO ARAÑA EJE CENTRAL MT27                   6.00                           
+139.00016   6112009270007                RETEN RUEDA EJE CENTRAL MT27 EXTERIOR           6.00                           
+139.00073   K169641                      PULMON FRENO EJE INT F/DISCO MT27 NUEVO         4.00                           
+139.00076   6112005199002                FLEXIBLE AIRE EJE CENTRAL MT27 H-H              6.00                           
+140.00012                                INYECTOR CUMM 6C EURO V MT REP (2468)          36.00                           
+144.00007   6022001052008                CONEX BUJE TAPA COMP EURO V 6C MT17             6.00                           
+144.00008   6022001050002                CONEX CODO 90° TAPA COMP EURO V 6C MT17         6.00                           
+145.00003   6112401142002                PALETA VENTILADOR AGRALE MT27                   1.00                           
+145.00011   4934412                      CODO SALIDA ESCAPE EURO V MT27 ISL (FUND        2.00                           
+146.00009   6022501163008                JUNTA TROMPA COMPRESOR CUMM 6C E5 MT27          6.00                           
+146.00014   3916051                      FLEXIBLE LUBRICACION COMP ISL MT27 57CM         2.00                           
+202.00130                                CALCO INTERNO 0800 EXTERIOR N°0 CABA           10.00                           
+202.00131                                CALCO INTERNO 0800 EXTERIOR N°1 CABA           10.00                           
+202.00132                                CALCO INTERNO 0800 EXTERIOR N°2 CABA           10.00                           
+202.00133                                CALCO INTERNO 0800 EXTERIOR N°3 CABA           10.00                           
+202.00134                                CALCO INTERNO 0800 EXTERIOR N°4 CABA           10.00                           
+202.00135                                CALCO INTERNO 0800 EXTERIOR N°5 CABA           10.00                           
+202.00136                                CALCO INTERNO 0800 EXTERIOR N°6-9 CABA         10.00                           
+202.00137                                CALCO INTERNO 0800 EXTERIOR N°7 CABA           10.00                           
+202.00138                                CALCO INTERNO 0800 EXTERIOR N°8 CABA           10.00                           
+202.00140                                CALCO INTERNO 0800 INTERIOR N°0 CABA           10.00                           
+202.00141                                CALCO INTERNO 0800 INTERIOR N°1 CABA           10.00                           
+202.00142                                CALCO INTERNO 0800 INTERIOR N°2 CABA           10.00                           
+202.00143                                CALCO INTERNO 0800 INTERIOR N°3 CABA           10.00                           
+202.00144                                CALCO INTERNO 0800 INTERIOR N°4 CABA           10.00                           
+202.00145                                CALCO INTERIOR 0800 INTERIOR N°5 CABA          10.00                           
+202.00146                                CALCO INTERNO 0800 INTERIOR N°6-9 CABA         10.00                           
+202.00147                                CALCO INTERNO 0800 INTERIOR N°7 CABA           10.00                           
+202.00148                                CALCO INTERNO 0800 INTERIOR N°8 CABA           10.00                           
+202.00160                                CALCO 0800 EXTERIOR LAT LINEA 108 CABA          6.00                           
+202.00161                                CALCO 0800 EXTERIOR COLA LINEA 108 CABA         6.00                           
+202.00162                                CALCO 0800 INTERIOR LINEA 108 CABA              6.00                           
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  

@@ -1,0 +1,159 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+NOTA DE PEDIDO : 00003087                    FECHA : 09/03/2026                    Para: 2 PAÑOL LA NORIA               
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.        R. SOCIAL : DEPOSITO DOTA                                                  
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+002.00023                                ACEITE 85W 140 DIFERENCIAL X LITRO (205)      820.00                           
+005.00020                                RETIRO DE AGUA CON HIDROCARBURO              1000.00                           
+005.00116                                LAMPAZO PABILO 500 GRS LAVADERO                 6.00                           
+010.00106   SOLO SILICONADA              LAMPARA LED S/CULOTE 24V BLANCA               800.00                           
+011.00027                                ZOCALO PORTAFUSIBLE 63H/80AH/100AH              2.00                           
+011.00245                                PRECINTO Nº 1                                 100.00                           
+011.00894                                LED EN TIRA CON GUIA TB MT15 330CM 24V         10.00                           
+013.00045                                MOTOR LIMPIAPARABRISAS MT15-MT17 REPARAD       20.00                           
+013.00058   TRICO                        ESCOBILLA LIMPIAP 28" "CRITICO"                50.00                           
+013.00178                                PANEL 6 TECLAS TACTIL TODOBUS 2019              6.00                           
+015.00152   BTS                          CORREA 13 X 0990 SIMPLE                       150.00                           
+015.00160   CONTITECH                    CORREA 2BX-86 A/A                              25.00                           
+034.00056   SKF                          RULEMAN RUEDA DEL AGRALE M/N 212011/049        10.00                           
+077.00501   27055020                     FICHA PRINCIPAL CAJA T270 NUEVA                 1.00                           
+094.00082                                PLACA RESPALDO GIA VERDE C/LOGO CORTA          60.00                           
+094.00213                                PLACA ASIENTO GIA M/V VERDE C/LOGO            100.00                           
+098.00048   FERVI AIR                    PULMON SUSPENSION 01-0010 FERVI                48.00                           
+098.00121                                UNION DOBLE BRONCE 12MM                        20.00                           
+098.00165   6X4MM GRIL FLEX NATURAL      FLEXIBLE TEFLON/POLIA  6X4MM NATURAL X M      200.00                           
+098.00204   FERVI AIR                    VARILLA SUSPENSION 30/30                       30.00                           
+098.00232                                VALVULA RELAY WABCO REPARADA                    8.00                           
+098.01002                                MANGUERA LAVADERO R2 NUEVA                      1.00                           
+104.00227                                BULON 10X160MM                                 10.00                           
+104.00479   NEGRO                        PARKER 8X1" 1/2 NEGRO                         500.00                           
+104.00628                                MANIJA PORTON LATERAL PUNTA CUADRADA            1.00                           
+104.00756                                TORNILLO MECHA 8X1" POR UNIDAD                400.00                           
+104.00757                                TORNILLO MECHA 8X1 1/2" POR UNIDAD            400.00                           
+104.00825   RM8100                       SUNCHO P/ MATAFUEGO 5KG                         6.00                           
+104.00889   TALLE L                      GUANTE NITRILO TIPO LATEX "L" X UNIDAD       1000.00                           
+104.01192                                BASE ASIENTO NEUMATICA M/N  REP                10.00                           
+105.00083   DOBLE A                      CINTA PAPEL 48MM BLANCA PINTOR X 50MTS         60.00                           
+105.00128                                LIJA GRANO 80 AMARILLA                         20.00                           
+106.00002   MOTA E616                    BOCALLAVE 16MM HEXAGONAL ENC 1/2                1.00                           
+106.00006   MOTA E12                     LLAVE 12MM COMBINADA                            1.00                           
+106.00007   MOTA E16                     LLAVE 16MM COMBINADA                            1.00                           
+106.00012   PAPAIZ                       CANDADO CR40                                    1.00                           
+106.00015   NEUMATICAS DE 1/2"           CONEXION AIRE TALLER NIPLE MACHO 1/2"          20.00                           
+106.00019   MOTA Q620-Q630               PICO DE LORO 10"                                1.00                           
+106.00022   MOTA E10                     LLAVE 10MM COMBINADA                            1.00                           
+106.00026   MOTA E17                     LLAVE 17MM COMBINADA                            1.00                           
+106.00027   MOTA E19                     LLAVE 19MM COMBINADA                            1.00                           
+106.00028   MOTA E22                     LLAVE 22MM COMBINADA                            1.00                           
+106.00030   MOTA E613                    BOCALLAVE 13MM HEXAGONAL ENC 1/2                2.00                           
+106.00031   MOTA E622                    BOCALLAVE 22MM HEXAGONAL ENC 1/2                1.00                           
+106.00041   MOTA E617                    BOCALLAVE 17MM HEXAGONAL ENC 1/2                2.00                           
+106.00042   MOTA E619                    BOCALLAVE 19MM HEXAGONAL ENC 1/2                2.00                           
+106.00044   MOTA E621                    BOCALLAVE 21MM HEXAGONAL ENC 1/2                1.00                           
+106.00045   MOTA E11                     LLAVE 11MM COMBINADA                            1.00                           
+106.00047   MOTA E21                     LLAVE 21MM COMBINADA                            1.00                           
+106.00054   MOTA E08                     LLAVE 8MM COMBINADA                             1.00                           
+106.00055   MOTA E13                     LLAVE 13MM COMBINADA                            1.00                           
+106.00060   MOTA LQ92                    JUEGO LLAVES ALLEN MILIMETRICAS                 1.00                           
+106.00070   BAHCO 815RN                  LLAVE CRIQUE ENC 1/2                            1.00                           
+106.00086   MOTA E14                     LLAVE 14MM COMBINADA                            1.00                           
+106.00100   BAHCO S 8                    BOCALLAVE 8MM HEXAGONAL ENC 1/2                 1.00                           
+106.00108   MOTA E615                    BOCALLAVE 15MM HEXAGONAL ENC 1/2                1.00                           
+106.00126   MOTA E18                     LLAVE 18MM COMBINADA                            1.00                           
+106.00127   MOTA E15                     LLAVE 15MM COMBINADA                            1.00                           
+106.00128   MOTA E24                     LLAVE 24MM COMBINADA                            1.00                           
+106.00171   MOTA E27                     LLAVE 27MM COMBINADA                            1.00                           
+106.00172   BAHCO PU 30                  LLAVE 30MM COMBINADA                            1.00                           
+106.00175   DORMER                       MECHA 2.50MM                                   20.00                           
+106.00192   MOTA Q108                    PINZA UNIVERSAL 200MM / 8"                      1.00                           
+106.00221   MOTA E32                     LLAVE 32MM COMBINADA                            1.00                           
+106.00235   MOTA E612                    BOCALLAVE 12MM HEXAGONAL ENC 1/2                1.00                           
+106.00236   MOTA E614                    BOCALLAVE 14MM HEXAGONAL ENC 1/2                2.00                           
+106.00242   MOTA EF638                   MANIJA FUERZA 1/2"  40CM LARGO                  2.00                           
+106.00244   MOTA E610                    BOCALLAVE 10MM HEXAGONAL ENC 1/2                1.00                           
+106.00245   MOTA E611                    BOCALLAVE 11MM HEXAGONAL ENC 1/2                1.00                           
+106.00249   3/8 AIRE ACOPLES HEMBRA      MANGUERA TALLER NEGRA ARMADA X 10MTS            1.00                           
+106.00262   BAHCO                        BOCALLAVE 36MM HEXAGONAL ENC 3/4                1.00                           
+106.00301   MUNDIAL SIGNATURE 490-10     TIJERA COSTURA MUNDIAL SIGNATURE 490-10         1.00                           
+106.00737   BAHCO                        BOCALLAVE 33MM HEXAGONAL ENC 3/4                1.00                           
+106.00865                                JUEGO LLAVES ALLEN PULGADAS                     1.00                           
+106.00873   MOTA E627                    BOCALLAVE 27MM HEXAGONAL ENC 1/2                1.00                           
+106.00884   (GNIP62501)                  GUANTE NITRILO CONFORT PRESS NEGRO X PAR      480.00                           
+106.00985                                MAZA  2KG                                       2.00                           
+106.00993   MOTA DPH115                  DESTORNILLADOR PHILIPS 6 X 150                  2.00                           
+106.01135   MOTA EP26                    ALARGUE BOCALLAVE 1/2" MEDIANO 12.5CM           1.00                           
+106.01136   MOTA EP625                   ALARGUE BOCALLAVE 1/2" LARGO  25CM              1.00                           
+106.02070                                PISTOLA DIGITAL ACEITE Y AGUA REPARADA         10.00                           
+106.02337                                RUEDA 20CM PARA ZORRA/CARRO (SOLA)              2.00                           
+106.02383   MOTA DPL0615                 DESTORNILLADOR PLANO 6 X 150                    2.00                           
+106.03759                                LINEA DE VIDA ARNES SEGURID C/AMORTIGUAD        4.00                           
+106.03846   MOTA E624                    BOCALLAVE 24MM HEXAGONAL ENC 1/2                1.00                           
+106.03997   BACHO                        PISTOLA NEUMATICA 1/2" NUEVA                    1.00                           
+107.00050   10750                        BANCO DE TRABAJO                                1.00                           
+109.00076   RESPETAR MEDIDA              ABRAZADERA PRESION 56-64                      400.00                           
+109.00081   C22002                       MANGUERA 6 CIL BAJADA DEPOSITO AGUA             6.00                           
+109.00301                                POLEA LOCA MT15 REP.POR TALLER                 10.00                           
+110.00031   04-0140FERVI                 TOPE SUSPENSION AGRALE                         12.00                           
+111.00071                                TUERCA CAÑONERA C/TETON AGRALE EATON           20.00                           
+111.00085   03-0590                      PLATO PULMON SUSP 03-0590 M/N P/01-0510         2.00                           
+111.01215   6112009193001                TAPON TAPA DIFERENCIAL EATON AGRALE MT15        1.00                           
+112.00065   6001015010004                GOMA PEDAL FRENO AGRALE                        10.00                           
+112.00570                                MANIJA PORTON LATERAL PUNTA ALLEN 3/8           1.00                           
+112.00727   D103                         PARASOL PLASTICO VENTANA CHOFER                25.00                           
+113.00067   L2886                        CONEX REFRIG COMP WABCO ROSCA 1/2" X 1/2        2.00                           
+116.00075   6012201081000                MANGUERA MWM 4C DESCARGA ACEITE TURBO           2.00                           
+123.00033   16X1.5                       TUERCA 16X1.5 PALIER AGRALE MT17              100.00                           
+130.00001   PAMPERO                      PANTALON DE TRABAJO N°38 VERDE OLIVA            7.00                           
+130.00002   PAMPERO                      PANTALON DE TRABAJO N°40 VERDE OLIVA           19.00                           
+130.00003   PAMPERO                      PANTALON DE TRABAJO N°42 VERDE OLIVA           37.00                           
+130.00004   PAMPERO                      PANTALON DE TRABAJO N°44 VERDE OLIVA           47.00                           
+130.00005   PAMPERO                      PANTALON DE TRABAJO N°46 VERDE OLIVA           60.00                           
+130.00006   PAMPERO                      PANTALON DE TRABAJO N°48 VERDE OLIVA           34.00                           
+130.00007   PAMPERO                      PANTALON DE TRABAJO N°50 VERDE OLIVA           41.00                           
+130.00008   PAMPERO                      PANTALON DE TRABAJO N°52 VERDE OLIVA           21.00                           
+130.00009   PAMPERO                      PANTALON DE TRABAJO N°54 VERDE OLIVA           10.00                           
+130.00010   PAMPERO                      PANTALON DE TRABAJO N°56 VERDE OLIVA            9.00                           
+130.00011   PAMPERO                      PANTALON DE TRABAJO N°58 VERDE OLIVA            4.00                           
+130.00012   PAMPERO                      PANTALON DE TRABAJO N°60 VERDE OLIVA            4.00                           
+130.00016   PAMPERO                      CAMISA DE TRABAJO N°38 VERDE OLIVA             18.00                           
+130.00017   PAMPERO                      CAMISA DE TRABAJO N°40 VERDE OLIVA             42.00                           
+130.00018   PAMPERO                      CAMISA DE TRABAJO N°42 VERDE OLIVA             79.00                           
+130.00019   PAMPERO                      CAMISA DE TRABAJO N°44 VERDE OLIVA             67.00                           
+130.00020   PAMPERO                      CAMISA DE TRABAJO N°46 VERDE OLIVA             30.00                           
+130.00021   PAMPERO                      CAMISA DE TRABAJO N°48 VERDE OLIVA             25.00                           
+130.00022   PAMPERO                      CAMISA DE TRABAJO N°50 VERDE OLIVA             11.00                           
+130.00023   PAMPERO                      CAMISA DE TRABAJO N°52 VERDE OLIVA              7.00                           
+130.00024   PAMPERO                      CAMISA DE TRABAJO N°54 VERDE OLIVA              2.00                           
+130.00025   PAMPERO                      CAMISA DE TRABAJO N°56 VERDE OLIVA              2.00                           
+130.00058                                BOTIN DE TRABAJO N°40                           1.00                           
+130.00060                                BOTIN DE TRABAJO N°42                           3.00                           
+130.00062                                BOTIN DE TRABAJO N°44                           1.00                           
+132.00134   DUPONT R134A X 13.6KG        GAS A/A R134A MARCA DUPONT X KILO             340.00                           
+132.00215   A0903496                     EMBRAGUE A/A CLIMABUS NUEVO                     6.00                           
+132.00610   A-45                         EMBRAGUE A/A VALEO TM-65 NUEVO                  2.00                           
+136.00010   HE300FC                      TURBO CUMMINS 6C EURO V NUEVO                   2.00                           
+136.00012   0281006327                   SENSOR PRESION COMB CUM EURO V *                2.00                           
+136.00024   6022301048003                VARILLA ACEITE MOTOR CUMM6 EURO V MT17          4.00                           
+136.00034   6025101025006                ABRAZADERA FLEXIBLE ESCAPE MT17 EURO V         10.00                           
+136.00037   6022301033005                CAÑO ESCAPE EURO V INTERMEDIO Nº3               2.00                           
+136.00045   5367848                      JUNTA TAPA DE VALVULAS EURO V CUMMIS 6CI        2.00                           
+136.00072   5331785                      ABRAZADERA CODO ADMISION EURO V MT17            1.00                           
+136.00074   6022001070000                CONECTOR VOSS NG12 NW7.5 VARILLA ACEITE         4.00                           
+136.00134   6022301199004                SOPORTE MOTOR TRAS CUMM 6C EURO V IZQ           2.00                           
+136.00146   3354864                      JUNTA CODO ESCAPE A TURBO CUMM 6C E5            2.00                           
+136.00149   6022301203004                MANGUERA SALIDA CAJA CUMM E5 SILICONADA       150.00                           
+136.00150   6022301207005                MANGUERA ENTRADA CAJA CUMM E5 SILICONADA       30.00                           
+140.00007   4935974                      CAÑO INYECTOR CUMM 6C EURO V N°4 Y N°5          2.00                           
+142.00009   CV21044                      MANGUERA SAL ENFRI A CAJA 6C E3/E5             15.00                           
+142.00012   CV21043                      MANGUERA BAJADA  DEPOSITO REF 6C E3/E5         10.00                           
+145.00042   3286499                      MANGUERA DESCARGA ACEITE CUMMI ISL MT27         2.00                           
+145.00075   3901356                      JUNTA METALICA TURBO CUMM 6C ISL MT27           1.00                           
+146.00008   5333139                      FLEXIBLE LUBRICACION COMP E5 ISL MT27           2.00                           
+152.00003                                BOMBA ALTA PRESION MT27 ISL REP                 2.00                           
+157.00006   7113 STD AGUJ 8MM            CINTA FRENO TRAS SCANIA ARTICULADO STD         32.00                           
+157.00009   2378716                      CAMPANA TRASERA SCANIA 10" NUEVA                4.00                           
+201.00073                                DISYUNTOR TETRAPOLAR 63A TRIFASICO              1.00                           
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  
