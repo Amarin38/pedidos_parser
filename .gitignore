@@ -11,7 +11,9 @@ wheels/
 
 # Directories
 pedidos/*
-pedidos_separados/*
+!pedidos/.gitkeep
 
+pedidos_separados/*
+!pedidos_separados/.gitkeep
 
 *.spec

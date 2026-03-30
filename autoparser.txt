@@ -1,3 +1,0 @@
- Separar el archivo de pedidos en 3
- uno para oficina, otro para deposito y otro solo de ropa
- Ropa -> familia 130
