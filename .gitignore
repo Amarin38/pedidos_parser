@@ -10,4 +10,8 @@ wheels/
 .venv
 
 # Directories
-pedidos*/*
+pedidos/*
+pedidos_separados/*
+
+
+*.spec
