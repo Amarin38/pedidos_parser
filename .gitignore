@@ -9,11 +9,4 @@ wheels/
 # Virtual environments
 .venv
 
-# Directories
-pedidos/*
-!pedidos/.gitkeep
-
-pedidos_separados/*
-!pedidos_separados/.gitkeep
-
 *.spec

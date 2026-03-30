@@ -1,0 +1,29 @@
+COLECTIVEROS UNIDOS S.A.                                                                                                
+------------------------------------------------------------------------------------------------------------------------
+PEDIDO PENDIENTE: 00000460                    FECHA : 17/03/2026                    Para: 1 PAÑOL CENTRAL               
+PROVEEDOR : (0703) DEPOSITO DOTA S.A    - Pedido de Fecha 03/03/2026                                                    
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+005.00057                                QUITA SARRO POR LITRO                          10.00 RS C.u.s.a.               
+011.00771   AP307 LED AMBAR              FARO AP307 LED AMBAR LIMITADOR LATERAL          8.00 RS C.u.s.a.               
+011.00781   10336978                     FICHA SENSOR PUERTA MARCOPOLO 2021              4.00 RS C.u.s.a.               
+011.00918   6025011140002                CENTRAL ELECTRICA MODULAR                       1.00 RS C.u.s.a.               
+013.00258   10869656                     TAPA TECLA MARCOPOLO PUERTA 2 (MEDIO)           4.00 RS C.u.s.a.               
+075.00206                                SELECTORA ALLISON T260 / T270 REPARADO          1.00 RS C.u.s.a.               
+098.00822                                KIT O'RING CONEXION BRONCE 98.811              10.00 RS C.u.s.a.               
+098.00823                                KIT O'RING CONEXION BRONCE 98.812              10.00 RS C.u.s.a.               
+104.00604                                ESPEJO RETROVISOR CHICO MARCOPOLO               2.00 RS C.u.s.a.               
+104.00739                                SEGUER 8MM                                     10.00 RS C.u.s.a.               
+106.00582   BAHCO                        BOCALLAVE 1/4" HEXAGONAL ENC 1/4                2.00 RS C.u.s.a.               
+106.00786                                SOLDADOR VESUBIO NUEVO                          1.00 RS C.u.s.a.               
+106.00842                                BUSCA POLO                                      1.00 RS C.u.s.a.               
+106.02269                                LIMA TRIANGULO CHICA                            1.00 RS C.u.s.a.               
+106.02690                                SACA GANCHOS Y TACHUELAS                        2.00 RS C.u.s.a.               
+112.00513   204 X 79                     CAÑO MAMPARA TB PUERTA CENTRAL Y TRAS           3.00 RS C.u.s.a.               
+112.00739   6022301026009                SOPORTE CAÑO ESCAPE SALIDA TURBO MT17E5         1.00 RS C.u.s.a.               
+132.00185   I-64-1                       BASE GRANDE COMPRESOR A/A  CLIMABUS             1.00 RS C.u.s.a.               
+136.00116   6022301185003                CAÑO ESCAPE A FLEXIBLE EURO V M/N               1.00 RS C.u.s.a.               
+136.00118   6022301213003                CAÑO ESCAPE EURO V INTERMEDIO Nº3 M/N           1.00 RS C.u.s.a.               
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  
