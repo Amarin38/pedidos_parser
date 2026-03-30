@@ -10,5 +10,4 @@ wheels/
 .venv
 
 # Directories
-pedidos/*
-pedidos_separados/*
+pedidos*/*
