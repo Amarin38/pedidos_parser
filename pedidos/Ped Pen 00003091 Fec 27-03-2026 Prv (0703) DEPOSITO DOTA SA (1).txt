@@ -1,0 +1,26 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+PEDIDO PENDIENTE: 00003091                    FECHA : 27/03/2026                    Para: 2 PAÑOL LA NORIA              
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.   - Pedido de Fecha 18/03/2026                                                    
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+005.00021                                RESMA A4                                        6.00 RS                        
+011.00650   LED 74                       FARO AP 500 CRISTAL LED                        30.00 RS                        
+011.00751   LED 75                       FARO 550 LED CRISTAL 24V                       20.00 RS                        
+011.00771   AP307 LED AMBAR              FARO AP307 LED AMBAR LIMITADOR LATERAL         40.00 RS                        
+011.00952                                OPTICA LED ART 3404 ALTA REPARADA               2.00 RS                        
+013.00176                                PANEL 6 TECLAS IGUAZU 3 COMPLETO                4.00 RS                        
+098.00804   RAUFOSS 902 06 005           CONECTOR ABC REGULAR 6X1 SIMPLE                20.00 RS                        
+106.00054   MOTA E08                     LLAVE 8MM COMBINADA                             1.00 RS                        
+106.00985                                MAZA  2KG                                       1.00 RS                        
+106.02007                                ACETILENO X TUBO (RECAMBIO)                     1.00 RS                        
+106.02282   BAHCO                        BOCALLAVE 13MM ESTRIADO ENC 1/2                 1.00 RS                        
+112.00471                                ESPEJO EXTERIOR CONVEXO REPARADO               30.00 RS                        
+113.00107   6022005123003                SERPENTINA SAL COMPRESOR AGRALE NUEVA           2.00 RS                        
+123.00119                                BANANA MT17 EURO V MERITOR IZQ REPARADA         3.00 RS                        
+132.00215   A0903496                     EMBRAGUE A/A CLIMABUS NUEVO                     5.00 RS                        
+145.00016                                MAZA VENTILADOR MT27 EURO V NVA                10.00 RS                        
+145.00124   6022501051005                SOPORTE CAÑO REFRIGERACION MT27                 5.00 RS                        
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  

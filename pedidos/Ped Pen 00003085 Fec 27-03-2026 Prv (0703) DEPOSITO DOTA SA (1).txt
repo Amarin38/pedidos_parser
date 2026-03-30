@@ -1,0 +1,21 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+PEDIDO PENDIENTE: 00003085                    FECHA : 27/03/2026                    Para: 2 PAÑOL LA NORIA              
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.   - Pedido de Fecha 04/03/2026                                                    
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+009.00078                                ALTERNADOR 24V 110A ISL 2 OREJAS REP            2.00 RS                        
+011.01001   POR BATERIA                  RETIRO BATERIA C/CERTIFICADO X UNIDAD          39.00 RS                        
+098.00592   DSNU-40-200-P-A              PISTON PUERTA FESTO LARGO                       4.00 RS                        
+106.00018                                ARCO SIERRA CHICO                               2.00 RS                        
+106.00147   BAHCO                        BOCALLAVE 13/16" ESTRIADO ENC 1/2               1.00 RS                        
+106.03090                                TAPA INODORO UNIVERSAL MADERA BLANCA            2.00 RS                        
+202.00133                                CALCO INTERNO 0800 EXTERIOR N°3 CABA           10.00 RS                        
+202.00135                                CALCO INTERNO 0800 EXTERIOR N°5 CABA           10.00 RS                        
+202.00143                                CALCO INTERNO 0800 INTERIOR N°3 CABA           10.00 RS                        
+202.00160                                CALCO 0800 EXTERIOR LAT LINEA 108 CABA          6.00 RS                        
+202.00161                                CALCO 0800 EXTERIOR COLA LINEA 108 CABA         6.00 RS                        
+202.00162                                CALCO 0800 INTERIOR LINEA 108 CABA              6.00 RS                        
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  

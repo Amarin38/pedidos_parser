@@ -1,0 +1,29 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+PEDIDO PENDIENTE: 00003086                    FECHA : 27/03/2026                    Para: 2 PAÑOL LA NORIA              
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.   - Pedido de Fecha 06/03/2026                                                    
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+005.00001                                RETIRO BARRO LAVADERO                           1.00 RS                        
+005.00003                                SERVICIO DE HIDROJET                            1.00 RS                        
+005.00021                                RESMA A4                                        6.00 RS                        
+008.00259   2894256                      KIT FILTRO ACEITE SCANIA NTG 2894256           10.00 RS                        
+098.00593   DSNU-40-160-P-A              PISTON PUERTA FESTO CORTO                       4.00 RS                        
+106.00063   DORMER                       MECHA 5.75MM                                   10.00 RS                        
+106.00100   BAHCO S 8                    BOCALLAVE 8MM HEXAGONAL ENC 1/2                 2.00 RS                        
+106.00245   MOTA E611                    BOCALLAVE 11MM HEXAGONAL ENC 1/2                1.00 RS                        
+106.00365                                POWER CHICO REPARADO                            1.00 RS                        
+106.02907                                BOMBA NEUMATICA ENGRASE 2 CABEZALES REP         1.00 RS                        
+107.00050   10750                        BANCO DE TRABAJO                                2.00 RS                        
+108.00070   3943300                      SALIDA TERMOSTATO CUMM 4C/6C                    4.00 RS                        
+111.01200                                DIFERENCIAL MT15 EATON REPARADO                 1.00 RS                        
+112.00415   ARAMIL 0201250               BAGUETA SOP GOMA PUERTA UNA PATA TB             5.00 RS                        
+112.00583   B-B4340                      ANGULO ESTRIBO PARA CINTA TB RETIRO X MT        6.00 RS                        
+123.00116                                BANANA MT15 EURO V MERITOR DER REPARADA         1.00 RS                        
+127.00002                                DIFERENCIAL AGRALE MT17 SPICER REPARADO         1.00 RS                        
+132.00612   TM65 GIRO HORARIO            COMPRESOR A/A ROTATIVO MT15-17 NUEVO            2.00 RS                        
+136.00118   6022301213003                CAÑO ESCAPE EURO V INTERMEDIO Nº3 M/N           2.00 RS                        
+142.00026   961208610124                 MANGUERA TERMOSTATO A BLOCK MAXXFORCE           2.00 RS                        
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  

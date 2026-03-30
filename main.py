@@ -1,4 +1,6 @@
 import openpyxl
+import time
+import subprocess
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.styles import Font, Side, Border
 
@@ -10,7 +12,6 @@ from contants import TipoPedido, FormatoPedido
 from contants import COLUMNAS
 from typing import Any
 
-# TODO: queda que funcione con los pedidos pendientes
 class Pedidos:
     def __init__(self) -> None:
         self.archivos_raw = sorted(list(OFICINA_PATH.rglob("Ped *.txt")))
@@ -51,16 +52,14 @@ class Pedidos:
 
                 if re.search(r'Ped Pen', archivo_raw.name):
                     nombre = re.search(r'(Ped Pen.*?\d{2}-\d{2}-\d{4})', archivo_raw.name)
-
                     nombre_salida = OFICINA_XLSX_PATH / f"TODOS PENDIENTE {nombre.group(1) if nombre is not None else None}.xlsx"
-                    print(f"Convertido: {archivo_raw.name} -> {nombre_salida.name}")
+                    # print(f"Convertido: {archivo_raw.name} -> {nombre_salida.name}")
 
                     self.guardar_excel_formateado(df, archivo_raw, nombre_salida, FormatoPedido.PENDIENTE) 
                 else:
                     nombre = re.search(r'(Ped.*?\d{2}-\d{2}-\d{4})', archivo_raw.name)
-
                     nombre_salida = OFICINA_XLSX_PATH / f"TODOS {nombre.group(1) if nombre is not None else None}.xlsx"
-                    print(f"Convertido: {archivo_raw.name} -> {nombre_salida.name}")
+                    # print(f"Convertido: {archivo_raw.name} -> {nombre_salida.name}")
 
 
                     self.guardar_excel_formateado(df, archivo_raw, nombre_salida, FormatoPedido.NORMAL) 
@@ -319,19 +318,18 @@ class Codigos:
 
 if __name__ == '__main__':
     pedido = Pedidos()
-    codigos = Codigos()
+    # codigos = Codigos()
 
-    codigos.limpiar()
-    codigos.sacar_lista()
+    # codigos.limpiar()
+    # codigos.sacar_lista()
 
     print(CLI)
     tipo_filtrado = int(input(">> "))
 
     while tipo_filtrado != 0:
         try:
+            print("Separando pedidos...")
             match tipo_filtrado:
-                case 0:
-                    break
                 case 1:
                     df = pedido.limpiar()
 
@@ -350,7 +348,12 @@ if __name__ == '__main__':
                     df = pedido.limpiar()
 
                     pedido.filtrar(df, TipoPedido.ROPA)
-        
+            print("Pedidos separados exitosamente.")
+
+            time.sleep(4)
+            subprocess.run("cls", shell=True)
+
+            print("Pedidos separados exitosamente.")
             print(CLI)
             tipo_filtrado = int(input(">> "))    
         except ValueError as e:

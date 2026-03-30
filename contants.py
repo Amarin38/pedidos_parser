@@ -21,7 +21,7 @@ BASE_DIR = obtener_ruta_base()
 OFICINA_PATH = BASE_DIR / "pedidos"
 OFICINA_XLSX_PATH = BASE_DIR / "pedidos_separados"
 CODIGOS_PATH = BASE_DIR / "codigos"
-print(f"DEBUG: Buscando archivos en -> {BASE_DIR}")
+# print(f"DEBUG: Buscando archivos en -> {BASE_DIR}")
 
 COLUMNAS = {"Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total":"Columnas"}
 CLI = """

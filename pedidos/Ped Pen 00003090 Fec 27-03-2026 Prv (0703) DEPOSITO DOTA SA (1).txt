@@ -1,0 +1,33 @@
+DOTA S.A.                                                                                                               
+------------------------------------------------------------------------------------------------------------------------
+PEDIDO PENDIENTE: 00003090                    FECHA : 27/03/2026                    Para: 2 PAÑOL LA NORIA              
+PROVEEDOR : (0703) DEPOSITO DOTA S.A.   - Pedido de Fecha 16/03/2026                                                    
+------------------------------------------------------------------------------------------------------------------------
+Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total   
+------------------------------------------------------------------------------------------------------------------------
+011.00771   AP307 LED AMBAR              FARO AP307 LED AMBAR LIMITADOR LATERAL         50.00 RS                        
+104.00841   ESPESOR 7MM                  ARANDELA SUPLEMENTO 8MM X 7                    10.00 RS                        
+104.01086                                BASE ASIENTO NEUMATICA DEL PLATA REP           12.00 RS                        
+106.00110                                LLAVE ALLEN 4MM                                 1.00 RS                        
+106.00500                                MECHA 2.75MM                                   40.00 RS                        
+106.02265                                PILA  CR123                                     2.00 RS                        
+107.00116                                BOMBA ROWA PERIFERICA PR60 NUEVA                1.00 RS                        
+112.00365                                CAÑO TENSOR LARGO 40CM                          1.00 RS                        
+112.00366                                CAÑO TENSOR LARGO 42CM                          1.00 RS                        
+112.00463                                CAÑO TENSOR LARGO 28CM                          1.00 RS                        
+112.00467                                CAÑO TENSOR LARGO 30CM                          1.00 RS                        
+112.00550   DOT6                         CAÑO MAMPARA CENTRAL TRIPLE                     1.00 RS                        
+112.00696                                CAÑO TENSOR LARGO 31CM                          1.00 RS                        
+112.00919   0003 + 0967                  PARANTE VENTANILLA PLASTICO C/GOMAX MTS         4.00 RS                        
+113.00104   6112005089005                CAÑO SAL COMPRESOR REF AGRALE                   2.00 RS                        
+114.00005   F00RJ00414                   CANETA INYECTOR CUMM 4/6C ISBE NUEVA            2.00 RS                        
+116.00049   L3029                        FLEXIBLE CAJA DIRECCION HID MT15 LARGO          2.00 RS                        
+123.00107                                BANANA TRAS IZQ MT12 MT15 REPARADA              1.00 RS                        
+132.00341                                BOMBA VACIO DOSIBAC 280LTS REPARADA             1.00 RS                        
+136.00030   A00445                       BRIDA ESCAPE MT17 EURO V REFORMA NORIA          4.00 RS                        
+137.00027   2577091                      BUJE BARRA ESTAB SCANIA K280 CHICO             20.00 RS                        
+157.00002   2285273                      TUERCA BULON DE RUEDA SCANIA (2285273)         10.00 RS                        
+202.01105   ROJO Y BLANCO                CALCO LATERAL Nº8 LINEA 8 RETIRO                6.00 RS                        
+202.02603   VER FOTO                     CALCO LUMINOSO LINEA 31 "EXPRESO" M/N           2.00 RS                        
+------------------------------------------------------------------------------------------------------------------------
+IMPORTE TOTAL DEL PEDIDO :        0.00                                                                                  
