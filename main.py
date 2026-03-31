@@ -318,10 +318,10 @@ class Codigos:
 
 if __name__ == '__main__':
     pedido = Pedidos()
-    # codigos = Codigos()
+    codigos = Codigos()
 
-    # codigos.limpiar()
-    # codigos.sacar_lista()
+    codigos.limpiar()
+    codigos.sacar_lista()
 
     print(CLI)
     tipo_filtrado = int(input(">> "))
