@@ -335,7 +335,6 @@ if __name__ == '__main__':
 
                     pedido.filtrar(df, TipoPedido.OFICINA)
                     pedido.filtrar(df, TipoPedido.FLAVIO)
-                    pedido.filtrar(df, TipoPedido.ROPA)
                 case 2: 
                     df = pedido.limpiar()
 
