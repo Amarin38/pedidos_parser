@@ -11,6 +11,9 @@ def main():
     st.set_page_config(page_title="Separar Pedidos", page_icon="📑")
     st.title("Separar Pedidos")
 
+    if "zip_final" not in st.session_state:
+        st.session_state.zip_final = None
+
     st.button(
                 label="Recargar códigos ⟳",
                 type="secondary",
@@ -24,15 +27,32 @@ def main():
             aux1, centro, aux2 = st.columns([0.85,1,0.5])
             
             with centro:
-                separar_por = st.selectbox("Separar por:", options=list(SepararPorEnum), index=None, placeholder="-----")
+                separar_por = st.selectbox(
+                    label="Separar por:", 
+                    options=list(SepararPorEnum), 
+                    index=None, 
+                    placeholder="-----"
+                )
                 
-                st.button(
-                    label="Separar", 
+                if st.button(
+                    label="Separar pedidos", 
                     type="primary", 
                     width=200, 
                     disabled=separar_por is None,
-                    on_click=pedidos.ejecutar_todo,
-                    args=(uploaded_files, separar_por,)
+                ):
+                    with st.spinner("Separando pedidos..."):
+                        st.session_state.zip_final = pedidos.ejecutar_todo(uploaded_files, separar_por) # type: ignore
+
+                    
+
+                if st.session_state.zip_final is not None:
+                    st.success("Archivo generado.")
+                    st.download_button(
+                        label="Descargar pedidos.",
+                        data=st.session_state.zip_final,
+                        file_name=f"Pedidos separados {separar_por}.zip",
+                        mime="application/zip",
+                        on_click=lambda: st.session_state.update({"zip_final": None})
                     )
                 
 

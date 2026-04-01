@@ -18,22 +18,39 @@ class Pedidos:
 
 
     def ejecutar_todo(self, archivos_raw, separar_por: SepararPorEnum):
+        lista_df = self.limpiar(archivos_raw)
+        todos_los_excels = []
+
         match separar_por:
             case SepararPorEnum.TODO:
-                self.filtrar(archivos_raw, TipoPedidoEnum.OFICINA)
-                self.filtrar(archivos_raw, TipoPedidoEnum.FLAVIO)
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA)) # type: ignore
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO)) # type: ignore
 
             case SepararPorEnum.SOLO_OFICINA:
-                self.filtrar(archivos_raw, TipoPedidoEnum.OFICINA)
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA)) # type: ignore
 
             case SepararPorEnum.SOLO_FLAVIO:
-                self.filtrar(archivos_raw, TipoPedidoEnum.FLAVIO)
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO)) # type: ignore
 
             case SepararPorEnum.SOLO_ROPA:
-                self.filtrar(archivos_raw, TipoPedidoEnum.ROPA)
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.ROPA)) # type: ignore
 
 
-    def limpiar(self, archivos_raw) -> tuple[list[Any], ...]: # type: ignore
+        for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
+            es_pendiente = re.search(r'Ped Pen', nombre_archivo)
+            match_nombre = self.regex_pedido_pend(nombre_archivo) if es_pendiente else self.regex_pedido(nombre_archivo)
+            formato = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
+            
+            # Llamamos a filtrar_resto (que devuelve la tupla WB, Nombre)
+            tupla_resto = self.filtrar_resto(df, match_nombre, archivo_raw, formato)
+            
+            if tupla_resto[0] is not None:
+                todos_los_excels.append(tupla_resto)
+
+        return self.crear_zip(todos_los_excels)
+    
+
+    def limpiar(self, archivos_raw): # type: ignore
         lista_df = []
 
         for archivo_raw in archivos_raw:
@@ -44,6 +61,7 @@ class Pedidos:
                         skiprows=5
                     )
                 
+                nombre_archivo = archivo_raw.name
                 file_size = len(df)
 
                 df = df.drop([0, file_size-1, file_size-2]) # elimino todo, dejo solo la tabla principal
@@ -64,77 +82,51 @@ class Pedidos:
                 df["Cantidad"] = pd.to_numeric(df["Cantidad"], errors='coerce')
 
                 df = df.drop(columns="Columnas")
-
-                # FIXME: evitar hacer el re.search 2 veces
-                if re.search(r'Ped Pen', archivo_raw.name):
-                    nombre = re.search(r'(Ped Pen.*?\d{2}-\d{2}-\d{4})', archivo_raw.name)
-                    match_nombre = nombre.group(1) if nombre is not None else None
-
-                    nombre_salida = f"TODOS PENDIENTE {match_nombre}.xlsx"
-
-                    self.guardar_excel_formateado(df, archivo_raw, nombre_salida, FormatoPedidoEnum.PENDIENTE) 
-                else:
-                    nombre = re.search(r'(Ped.*?\d{2}-\d{2}-\d{4})', archivo_raw.name)
-                    match_nombre = nombre.group(1) if nombre is not None else None
-
-                    nombre_salida = f"TODOS {match_nombre}.xlsx"
-
-                    self.guardar_excel_formateado(df, archivo_raw, nombre_salida, FormatoPedidoEnum.NORMAL) 
-                
-                lista_df.append((df, archivos_raw.name))
-
+                lista_df.append((df, nombre_archivo))
             except Exception as e:
-                print(f"No se puede procesar el archivo {archivo_raw.name} -> {e}") #TODO: cambiar por excepcion de streamlit
-        return lista_df, archivos_raw
+                print(f"No se puede procesar el archivo {archivo_raw.name} -> {e}")
+        return lista_df
 
 
-    def filtrar(self, archivos_raw, tipo_filtro: TipoPedidoEnum):
-        lista_df = self.limpiar(archivos_raw)
+    def filtrar(self, lista_df, archivos_raw, tipo_filtro: TipoPedidoEnum):
+        excels_generados = []
 
         try:
             codigos = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{tipo_filtro}.xlsx", dtype={"Codigos": str})["Codigos"]
             
-            # TODO: recibir los df y los nombres de los archivos
             for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
                 df["Articulo"] = df["Articulo"].astype(str).str.strip()
                 pertenece = df["Articulo"].isin(codigos)
                 df_final = df[pertenece]
+                
+                es_pendiente = re.search(r'Ped Pen', nombre_archivo)
+                match_nombre = self.regex_pedido_pend(nombre_archivo) if es_pendiente else self.regex_pedido(nombre_archivo)
+                formato = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
 
+                nombre_final = f"PEDIDO {formato} {tipo_filtro} {match_nombre}.xlsx"
+                wb = self.guardar_excel_formateado(df_final, archivo_raw, nombre_final, formato, tipo_filtro)
 
-                if re.search(r'Ped Pen', nombre_archivo):
-                    nombre = re.search(r'(Ped Pen.*?\d{2}-\d{2}-\d{4})', nombre_archivo)
-                    match_nombre = nombre.group(1) if nombre is not None else None
-
-                    nombre_final = f"PEDIDO PENDIENTE {tipo_filtro} {match_nombre}.xlsx"
-
-                    self.filtrar_resto(df, match_nombre, archivo_raw, FormatoPedidoEnum.PENDIENTE)
-                    self.guardar_excel_formateado(df_final, archivo_raw, nombre_final, FormatoPedidoEnum.PENDIENTE, tipo_filtro)
-                else:
-                    nombre = re.search(r'(Ped.*?\d{2}-\d{2}-\d{4})', nombre_archivo)
-                    match_nombre = nombre.group(1) if nombre is not None else None
-
-                    nombre_final = f"PEDIDO {tipo_filtro} {match_nombre}.xlsx"
-
-                    self.filtrar_resto(df, match_nombre, archivo_raw, FormatoPedidoEnum.NORMAL)
-                    self.guardar_excel_formateado(df_final, archivo_raw, nombre_final, FormatoPedidoEnum.NORMAL, tipo_filtro)
+                if wb is not None:
+                    excels_generados.append((wb, nombre_final))
+            return excels_generados
 
         except FileNotFoundError as e:
             print("No existe el archivo -> ", e)
 
 
-    def filtrar_resto(self, df: pd.DataFrame, nombre_archivo, archivo_raw: Path, formato_pedido: FormatoPedidoEnum) -> None:
+    def filtrar_resto(self, df: pd.DataFrame, nombre_archivo_limpio, archivo_raw: Path, formato_pedido: FormatoPedidoEnum):
         codigos_flavio  = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.FLAVIO}.xlsx", dtype={"Codigos": str})["Codigos"]
         codigos_oficina = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.OFICINA}.xlsx", dtype={"Codigos": str})["Codigos"]
         codigos_ropa    = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.ROPA}.xlsx", dtype={"Codigos": str})["Codigos"]
         
         todos = pd.concat([codigos_flavio, codigos_oficina, codigos_ropa])
         no_pertenece = ~df["Articulo"].isin(todos)
-
         df_resto = df[no_pertenece]
-        
-        nombre_salida = f"RESTO PEDIDO {formato_pedido} {nombre_archivo}.xlsx"
 
-        self.guardar_excel_formateado(df_resto, archivo_raw, nombre_salida, formato_pedido, TipoPedidoEnum.RESTO)
+        nombre_salida = f"RESTO PEDIDO {formato_pedido} {nombre_archivo_limpio}.xlsx"
+        wb = self.guardar_excel_formateado(df_resto, archivo_raw, nombre_salida, formato_pedido, TipoPedidoEnum.RESTO)
+
+        return (wb, nombre_salida)
 
 
     @staticmethod
@@ -154,6 +146,18 @@ class Pedidos:
             return match.group(0).strip()
         else:
             return texto_final
+
+
+    @staticmethod
+    def regex_pedido(nombre_archivo):
+        nombre = re.search(r'(Ped.*?\d{2}-\d{2}-\d{4})', nombre_archivo)
+        return nombre.group(1) if nombre is not None else None
+    
+
+    @staticmethod
+    def regex_pedido_pend(nombre_archivo):
+        nombre = re.search(r'(Ped Pen.*?\d{2}-\d{2}-\d{4})', nombre_archivo)
+        return nombre.group(1) if nombre is not None else None
 
 
     @staticmethod
@@ -190,19 +194,26 @@ class Pedidos:
         return num_pedido, fecha, para_quien, proveedor, razon_social 
 
 
-    def guardar_excel_formateado(self, df: pd.DataFrame, archivo_raw: Path, ruta_salida: str, formato_pedido: FormatoPedidoEnum, pedido_para: TipoPedidoEnum | None = None) -> openpyxl.Workbook:
-        if df.empty:
-            return openpyxl.Workbook()
+    def guardar_excel_formateado(self, df: pd.DataFrame, archivo_raw, ruta_salida: str, formato_pedido: FormatoPedidoEnum, pedido_para: TipoPedidoEnum | None = None) -> openpyxl.Workbook | None:
+        if df is None or df.empty:
+            return None
         
         thick_side = Side(border_style="thick", color="000000")
         thin_side = Side(border_style="thin", color="000000")
         border_style_datos = Border(top=thick_side, left=thick_side, right=thick_side, bottom=thick_side)
         border_style_tabla = Border(top=thin_side, left=thin_side, right=thin_side, bottom=thin_side)
         
-        with open(archivo_raw, 'r', encoding='latin1') as f:
-            primera_linea = f.readline().strip()
-            texto_encabezado = "".join([f.readline() for _ in range(4)])
-            datos = self.filtrar_datos(texto_encabezado, formato_pedido)
+        archivo_raw.seek(0)
+        primera_linea = archivo_raw.readline().decode('latin1').strip()
+
+        lineas_encabezado = []
+
+        for _ in range(4):
+            linea_bytes = archivo_raw.readline()
+            lineas_encabezado.append(linea_bytes.decode('latin1'))
+
+        texto_encabezado = "".join(lineas_encabezado)
+        datos = self.filtrar_datos(texto_encabezado, formato_pedido)
 
         workbook = openpyxl.Workbook() # cargo el excel
         work_sheet = workbook.active # selecciono la hoja activa
@@ -274,12 +285,21 @@ class Pedidos:
         zip_buffer = BytesIO()
 
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zip_file:
-            for workbook, nombre_archivo in lista_workbooks:
-                excel_buffer = BytesIO()
+            for item in lista_workbooks:
+                if item is None:
+                    continue
+                
+                workbook, nombre_archivo = item
 
-                workbook.save(excel_buffer)
-                zip_file.writestr(nombre_archivo, excel_buffer.getvalue())
+                if workbook is None:
+                    continue
+
+                excel_buffer = BytesIO()
+                workbook.save(excel_buffer) # type: ignore
+                zip_file.writestr(nombre_archivo, excel_buffer.getvalue()) # type: ignore
+
         return zip_buffer.getvalue()
+
 
 class Codigos:
     def __init__(self) -> None:
