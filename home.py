@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from excel_logic import Pedidos, Codigos
 from constants import SepararPorEnum
 
@@ -43,7 +42,7 @@ def main():
                     with st.spinner("Separando pedidos..."):
                         st.session_state.zip_final = pedidos.ejecutar_todo(uploaded_files, separar_por) # type: ignore
 
-                    
+
 
                 if st.session_state.zip_final is not None:
                     st.success("Archivo generado.")

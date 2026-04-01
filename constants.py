@@ -1,7 +1,6 @@
 import sys
 from enum import auto, StrEnum
 from pathlib import Path
-from typing import SupportsIndex
 from strenum import UppercaseStrEnum
 
 def obtener_ruta_base():
