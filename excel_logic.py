@@ -23,17 +23,17 @@ class Pedidos:
 
         match separar_por:
             case SepararPorEnum.TODO:
-                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA)) # type: ignore
-                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO)) # type: ignore
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA))
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO))
 
             case SepararPorEnum.SOLO_OFICINA:
-                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA)) # type: ignore
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.OFICINA))
 
             case SepararPorEnum.SOLO_FLAVIO:
-                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO)) # type: ignore
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.FLAVIO))
 
             case SepararPorEnum.SOLO_ROPA:
-                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.ROPA)) # type: ignore
+                todos_los_excels.extend(self.filtrar(lista_df, archivos_raw, TipoPedidoEnum.ROPA))
 
 
         for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
@@ -41,10 +41,10 @@ class Pedidos:
             match_nombre = self.regex_pedido_pend(nombre_archivo) if es_pendiente else self.regex_pedido(nombre_archivo)
             formato = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
             
-            # Llamamos a filtrar_resto (que devuelve la tupla WB, Nombre)
             tupla_resto = self.filtrar_resto(df, match_nombre, archivo_raw, formato)
             
-            if tupla_resto[0] is not None:
+            # Evitamos meter Nones a la bolsa del ZIP
+            if tupla_resto and tupla_resto[0] is not None:
                 todos_los_excels.append(tupla_resto)
 
         return self.crear_zip(todos_los_excels)
@@ -108,10 +108,11 @@ class Pedidos:
 
                 if wb is not None:
                     excels_generados.append((wb, nombre_final))
-            return excels_generados
-
         except FileNotFoundError as e:
             print("No existe el archivo -> ", e)
+
+        return excels_generados
+        
 
 
     def filtrar_resto(self, df: pd.DataFrame, nombre_archivo_limpio, archivo_raw: Path, formato_pedido: FormatoPedidoEnum):
