@@ -92,7 +92,7 @@ class Pedidos:
         excels_generados = []
 
         try:
-            codigos = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{tipo_filtro}.xlsx", dtype={"Codigos": str})["Codigos"]
+            codigos = pd.read_excel(CODIGOS_PATH / f"codigos_{tipo_filtro}.xlsx".lower(), dtype={"Codigos": str})["Codigos"]
             
             for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
                 df["Articulo"] = df["Articulo"].astype(str).str.strip()
@@ -116,9 +116,9 @@ class Pedidos:
 
 
     def filtrar_resto(self, df: pd.DataFrame, nombre_archivo_limpio, archivo_raw: Path, formato_pedido: FormatoPedidoEnum):
-        codigos_flavio  = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.FLAVIO}.xlsx", dtype={"Codigos": str})["Codigos"]
-        codigos_oficina = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.OFICINA}.xlsx", dtype={"Codigos": str})["Codigos"]
-        codigos_ropa    = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.ROPA}.xlsx", dtype={"Codigos": str})["Codigos"]
+        codigos_flavio  = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.FLAVIO}.xlsx".lower(), dtype={"Codigos": str})["Codigos"]
+        codigos_oficina = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.OFICINA}.xlsx".lower(), dtype={"Codigos": str})["Codigos"]
+        codigos_ropa    = pd.read_excel(CODIGOS_PATH / f"CODIGOS_{TipoPedidoEnum.ROPA}.xlsx".lower(), dtype={"Codigos": str})["Codigos"]
         
         todos = pd.concat([codigos_flavio, codigos_oficina, codigos_ropa])
         no_pertenece = ~df["Articulo"].isin(todos)
