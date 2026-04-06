@@ -6,3 +6,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Directories
+.vscode
+pedidos

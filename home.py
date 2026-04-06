@@ -1,11 +1,11 @@
 import streamlit as st
-from excel_logic import Pedidos, Codigos
+from excel_logic import Pedidos
 from constants import SepararPorEnum
 
+from db import DBBase, db_engine
 
 def main():
     pedidos = Pedidos()
-    codigos = Codigos()
 
     st.set_page_config(page_title="Separar Pedidos", page_icon="📑")
     st.title("Separar Pedidos")
@@ -13,12 +13,6 @@ def main():
     if "zip_final" not in st.session_state:
         st.session_state.zip_final = None
 
-    st.button(
-                label="Recargar códigos ⟳",
-                type="secondary",
-                on_click=codigos.ejecutar_todo
-            )
-    
     uploaded_files = st.file_uploader("Inserta los archivos", accept_multiple_files=True, type="txt")
 
     if uploaded_files is not None and uploaded_files != []:
@@ -57,3 +51,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    DBBase.metadata.create_all(db_engine)

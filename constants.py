@@ -4,14 +4,75 @@ from strenum import UppercaseStrEnum
     
 BASE_DIR = Path(__file__).resolve().parent
 
-CODIGOS_PATH = BASE_DIR / "codigos"
+DB_PATH: str = f"sqlite:///{BASE_DIR}/db/database.db"
+CODIGOS_PATH = BASE_DIR / "assets" / "codigos.xlsx"
 COLUMNAS = {"Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total":"Columnas"}
 
+NO_DATA         = "Sin datos"
+ROPA_FAM        = 130
+TYPE_FAM_ART    = 'Int32'
+UNNAMED         = "^Unnamed"
+SEPARATOR       = "."
+
+
+# DF Cols
+COL_COLUMNAS        : str = "Columnas"
+COL_COD_PROVEEDOR   : str = "Codigo Proveedor"
+COL_ARTICULO        : str = "Articulo"
+COL_DESCRIPCION     : str = "Descripcion"
+COL_CANTIDAD        : str = "Cantidad"
+COL_FAMILIA         : str = "Familia"
+COL_CODIGO          : str = "Codigo"
+COL_CODIGOS         : str = "Codigos"
+COL_DEPOSITO        : str ="Deposito"
+# REGEX
+PED_PEN             = r'Ped Pen'
+REGEX_ARTICULO      = r'^.{0}(.*?) \s{2,}'
+REGEX_COD_PROV      = r'^.{12}(.*?) \s{2,}'
+REGEX_CANTIDAD      = r'(\d+\.?\d*)'
+REGEX_PED_PEN       = r'(Ped Pen.*?\d{2}-\d{2}-\d{4})'
+REGEX_PED           = r'(Ped.*?\d{2}-\d{2}-\d{4})'
+REGEX_EXTRAER_DIN   = r'^.*?(?=\s{2,})'
+REGEX_NOTA_PED      = r'NOTA DE PEDIDO\s*:\s*(\d+)'
+REGEX_NOTA_PED_PEN  = r'PEDIDO PENDIENTE\s*:\s*(\d+)'
+REGEX_FECHA         = r'FECHA\s*:\s*([\d/]+)'
+REGEX_PARA          = r'Para:\s*(.*?)(?:\s{2,}|\n|$)'
+REGEX_PROVEEDOR     = r'PROVEEDOR\s*:\s*(.*?)(?:\s{2,}|\n|$)'
+REGEX_RAZON_SOCIAL  = r'R\.\s*SOCIAL\s*:\s*(.*?)(?:\s{2,}|\n|$)'
+REGEX_PED_FECHAS    = r'Pedido de Fecha\s*(.*?)(?:\s{2,}|\n|$)'
+
+
+# WORK SHEET
+WS_BORDER_COLOR : str = "000000"
+WS_BORDER_THICK : str = "thick"
+WS_BORDER_THIN  : str = "thin"
+
+WS_ENCODING: str = 'latin1' 
+
+WS_TITLE        : str = "PEDIDO"
+WS_NOTA_PED     : str = "NOTA DE PEDIDO:"
+WS_R_SOCIAL     : str = "R.SOCIAL:"
+WS_PED_PEN      : str = "PEDIDO PENDIENTE:"
+WS_PED_FECHA    : str = "PEDIDO DE FECHA:"
+WS_PROVEEDOR    : str = "PROVEEDOR:"
+WS_FECHA        : str = "FECHA:"
+WS_PARA         : str = "PARA:"
+WS_PEDIDO_PARA  : str = "PEDIDO PARA:"
+WS_TIPO_PEDIDO  : str = "TIPO DE PEDIDO:"
+
+WS_A_WIDTH: int = 25
+WS_B_WIDTH: int = 45
+WS_C_WIDTH: int = 50
+WS_D_WIDTH: int = 15
+
+
+# Enums
 class TipoPedidoEnum(UppercaseStrEnum):
     OFICINA = auto()
     FLAVIO = auto()
     ROPA = auto()
     RESTO = auto()
+
 
 class SepararPorEnum(StrEnum):
     def _generate_next_value_(name, start, count, last_values): # type: ignore
