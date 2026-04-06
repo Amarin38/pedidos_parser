@@ -12,7 +12,7 @@
       "settings": {
         // 1. VS Code ahora buscará Python aquí:
         "python.defaultInterpreterPath": "/home/vscode/.venv/bin/python",
-        "python.analysis.extraPaths": ["/workspaces/autoparser"]
+        "python.analysis.extraPaths": ["/workspaces/separar_pedidos"]
       }
     }
   },
@@ -22,5 +22,5 @@
     // 2. MAGIA AQUÍ: uv creará el entorno en el disco nativo del contenedor
     "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv"
   },
-  "postCreateCommand": "git config --global --add safe.directory /workspaces/autoparser && uv sync"
+  "postCreateCommand": "git config --global --add safe.directory '*' && uv sync"
 }
