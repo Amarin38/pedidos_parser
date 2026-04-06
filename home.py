@@ -1,5 +1,5 @@
 import streamlit as st
-from datetime import datetime
+from datetime import date
 
 import constants as const
 from constants import SepararPorEnum
@@ -51,7 +51,7 @@ def main():
                     st.download_button(
                         label=const.DOWNLOAD_BTTN_LABEL,
                         data=st.session_state.zip_final,
-                        file_name=f"Pedidos separados {separar_por} {datetime.now().strftime("%d-%m-%Y %H:%M:%S")}.zip",
+                        file_name=f"Pedidos separados {separar_por} {date.today().strftime("%d-%m-%Y")}.zip",
                         mime="application/zip",
                         on_click=lambda: st.session_state.update({"zip_final": None})
                     )
