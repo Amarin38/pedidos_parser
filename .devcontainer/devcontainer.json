@@ -1,0 +1,26 @@
+{
+  "name": "Separar pedidos",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        // 1. VS Code ahora buscará Python aquí:
+        "python.defaultInterpreterPath": "/home/vscode/.venv/bin/python",
+        "python.analysis.extraPaths": ["/workspaces/autoparser"]
+      }
+    }
+  },
+  "forwardPorts": [8501],
+  "containerEnv": {
+    "UV_LINK_MODE": "copy",
+    // 2. MAGIA AQUÍ: uv creará el entorno en el disco nativo del contenedor
+    "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv"
+  },
+  "postCreateCommand": "git config --global --add safe.directory /workspaces/autoparser && uv sync"
+}
