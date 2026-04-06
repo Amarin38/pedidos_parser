@@ -87,18 +87,15 @@ class Pedidos:
         excels_generados = []
 
         try:
-            codigos = self.cod.separar_codigos(tipo_filtro)["Codigos"]
+            codigos = self.cod.separar_codigos(tipo_filtro)[const.COL_CODIGOS]
 
             for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
                 df[const.COL_ARTICULO] = df[const.COL_ARTICULO].astype(str).str.strip()
                 pertenece = df[const.COL_ARTICULO].isin(codigos)
                 df_final = df[pertenece]
                 
-                es_pendiente = re.search(const.PED_PEN, nombre_archivo)
-                match_nombre = self.regex_pedido_pend(nombre_archivo) if es_pendiente else self.regex_pedido(nombre_archivo)
-                formato = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
-
-                nombre_final = f"PEDIDO {formato} {tipo_filtro} {match_nombre}.xlsx"
+                nombre, formato = self.regex_pedido(nombre_archivo)
+                nombre_final = f"PEDIDO {formato} {tipo_filtro} {nombre}.xlsx"
                 wb = self.formatear_excel(df_final, archivo_raw, formato, tipo_filtro)
 
                 if wb is not None:
@@ -110,22 +107,19 @@ class Pedidos:
         
 
     def filtrar_resto(self, lista_df: List[Tuple[pd.DataFrame,str]], archivos_raw: List[Any]) -> List[Tuple[pd.DataFrame,str]]:
-        codigos_flavio  = self.cod.separar_codigos(TipoPedidoEnum.FLAVIO)["Codigos"]
-        codigos_oficina = self.cod.separar_codigos(TipoPedidoEnum.OFICINA)["Codigos"]
-        codigos_ropa    = self.cod.separar_codigos(TipoPedidoEnum.ROPA)["Codigos"]
+        codigos_flavio  = self.cod.separar_codigos(TipoPedidoEnum.FLAVIO)[const.COL_CODIGOS]
+        codigos_oficina = self.cod.separar_codigos(TipoPedidoEnum.OFICINA)[const.COL_CODIGOS]
+        codigos_ropa    = self.cod.separar_codigos(TipoPedidoEnum.ROPA)[const.COL_CODIGOS]
         
         lista_resto = []
 
         for (df, nombre_archivo), archivo_raw in zip(lista_df, archivos_raw):
-            es_pendiente = re.search(const.PED_PEN, nombre_archivo)
-            match_nombre = self.regex_pedido_pend(nombre_archivo) if es_pendiente else self.regex_pedido(nombre_archivo)
-            formato      = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
-            
             todos           = pd.concat([codigos_flavio, codigos_oficina, codigos_ropa]).astype(str).str.strip()
             no_pertenece    = ~df[const.COL_ARTICULO].isin(todos)
             df_resto        = df[no_pertenece]
 
-            nombre_salida = f"RESTO PEDIDO {formato} {match_nombre}.xlsx"
+            nombre, formato = self.regex_pedido(nombre_archivo)
+            nombre_salida = f"RESTO PEDIDO {formato} {nombre}.xlsx"
             wb = self.formatear_excel(df_resto, archivo_raw, formato, TipoPedidoEnum.RESTO)
 
             tupla_resto = (wb, nombre_salida)
@@ -266,14 +260,11 @@ class Pedidos:
 
     @staticmethod
     def regex_pedido(nombre_archivo: str):
-        nombre = re.search(const.REGEX_PED, nombre_archivo)
-        return nombre.group(1) if nombre is not None else None
-    
-
-    @staticmethod
-    def regex_pedido_pend(nombre_archivo: str):
-        nombre = re.search(const.REGEX_PED_PEN, nombre_archivo)
-        return nombre.group(1) if nombre is not None else None
+        es_pendiente = re.search(const.PED_PEN, nombre_archivo)
+        match_nombre = re.search(const.REGEX_PED_PEN, nombre_archivo) if es_pendiente else re.search(const.REGEX_PED, nombre_archivo)
+        formato      = FormatoPedidoEnum.PENDIENTE if es_pendiente else FormatoPedidoEnum.NORMAL
+        
+        return (match_nombre.group(1) if match_nombre is not None else None, formato)
 
 
     @staticmethod
@@ -316,6 +307,7 @@ class Codigos:
         self.repo = CodigosRepository()
         self.vm = CodigosVM()
 
+
     def sacar_lista(self) -> None:
         df = pd.read_excel(const.CODIGOS_PATH, dtype={const.COL_CODIGO: str})
         
@@ -341,8 +333,8 @@ class Codigos:
     def separar_codigos(self, tipo_pedido: TipoPedidoEnum) -> pd.DataFrame:
         df = self.repo.get_df()
 
-        df[const.COL_FAMILIA]   = df[const.COL_FAMILIA].astype(const.TYPE_FAM_ART)
-        df[const.COL_ARTICULO]  = df[const.COL_ARTICULO].astype(const.TYPE_FAM_ART)
+        df[const.COL_FAMILIA]   = df[const.COL_FAMILIA].astype(pd.Int32Dtype())
+        df[const.COL_ARTICULO]  = df[const.COL_ARTICULO].astype(pd.Int32Dtype())
         
         if tipo_pedido != TipoPedidoEnum.ROPA:
             df_final = df.loc[df[const.COL_DEPOSITO] == tipo_pedido, :]
@@ -353,8 +345,8 @@ class Codigos:
         df_final = df_final.reset_index(drop=True)
         df_final = df_final.loc[:, ~df_final.columns.str.contains(const.UNNAMED)]
         
-        fam_final = df_final[const.COL_FAMILIA].astype(str).str.zfill(3)
-        art_final = df_final[const.COL_ARTICULO].astype(str).str.zfill(5)
+        fam_final                   = df_final[const.COL_FAMILIA].astype(str).str.zfill(3)
+        art_final                   = df_final[const.COL_ARTICULO].astype(str).str.zfill(5)
         df_final[const.COL_CODIGOS] = fam_final.str.cat(art_final, sep=const.SEPARATOR)
 
         return df_final

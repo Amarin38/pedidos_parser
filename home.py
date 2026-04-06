@@ -1,49 +1,57 @@
 import streamlit as st
-from excel_logic import Pedidos
-from constants import SepararPorEnum
+from datetime import datetime
 
+import constants as const
+from constants import SepararPorEnum
+from excel_logic import Pedidos, Codigos
 from db import DBBase, db_engine
 
 def main():
     pedidos = Pedidos()
+    codigos = Codigos()
 
-    st.set_page_config(page_title="Separar Pedidos", page_icon="📑")
-    st.title("Separar Pedidos")
+    st.set_page_config(page_title=const.PAGE_TITLE, page_icon="📑")
+    st.title(const.PAGE_TITLE)
 
     if "zip_final" not in st.session_state:
         st.session_state.zip_final = None
 
-    uploaded_files = st.file_uploader("Inserta los archivos", accept_multiple_files=True, type="txt")
+    st.button(
+                label=const.RECARGAR_LABEL,
+                type="secondary",
+                on_click=codigos.sacar_lista
+            )
+    
+    uploaded_files = st.file_uploader(const.UPLOAD_TITLE, accept_multiple_files=True, type="txt")
 
     if uploaded_files is not None and uploaded_files != []:
-        with st.container(width=500):
-            aux1, centro, aux2 = st.columns([0.85,1,0.5])
+        with st.container(width=const.CONTAINER_WIDTH):
+            aux1, centro, aux2 = st.columns(const.MAIN_COLS)
             
             with centro:
                 separar_por = st.selectbox(
-                    label="Separar por:", 
+                    label=const.SELECT_BOX_LABEL, 
                     options=list(SepararPorEnum), 
                     index=None, 
-                    placeholder="-----"
+                    placeholder=const.PLACEHOLDER
                 )
                 
                 if st.button(
-                    label="Separar pedidos", 
+                    label=const.SEPARAR_LABEL, 
                     type="primary", 
                     width=200, 
                     disabled=separar_por is None,
                 ):
-                    with st.spinner("Separando pedidos..."):
+                    with st.spinner(const.SEPARAR_SPINNER):
                         st.session_state.zip_final = pedidos.ejecutar_todo(uploaded_files, separar_por) # type: ignore
 
 
-
                 if st.session_state.zip_final is not None:
-                    st.success("Archivo generado.")
+                    st.success(const.SUCCESS_FILE)
                     st.download_button(
-                        label="Descargar pedidos.",
+                        label=const.DOWNLOAD_BTTN_LABEL,
                         data=st.session_state.zip_final,
-                        file_name=f"Pedidos separados {separar_por}.zip",
+                        file_name=f"Pedidos separados {separar_por} {datetime.now().strftime("%d-%m-%Y %H:%M:%S")}.zip",
                         mime="application/zip",
                         on_click=lambda: st.session_state.update({"zip_final": None})
                     )

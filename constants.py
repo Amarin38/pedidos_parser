@@ -1,18 +1,32 @@
 from enum import auto, StrEnum
 from pathlib import Path
 from strenum import UppercaseStrEnum
-    
+from typing import Tuple
+
 BASE_DIR = Path(__file__).resolve().parent
 
 DB_PATH: str = f"sqlite:///{BASE_DIR}/db/database.db"
 CODIGOS_PATH = BASE_DIR / "assets" / "codigos.xlsx"
 COLUMNAS = {"Articulo    Cod Prov                     Descripcion                                 Cantidad   Prec Unit     S-Total":"Columnas"}
 
-NO_DATA         = "Sin datos"
-ROPA_FAM        = 130
-TYPE_FAM_ART    = 'Int32'
-UNNAMED         = "^Unnamed"
-SEPARATOR       = "."
+NO_DATA         : str = "Sin datos"
+UNNAMED         : str = "^Unnamed"
+SEPARATOR       : str = "."
+ROPA_FAM        : int = 130
+
+
+# Page
+PAGE_TITLE          : str = "Separar Pedidos"
+UPLOAD_TITLE        : str = "Inserta los archivos"
+SELECT_BOX_LABEL    : str = "Separar por:"
+RECARGAR_LABEL      : str = "Recargar códigos ⟳"
+SEPARAR_LABEL       : str = "Separar pedidos"
+SEPARAR_SPINNER     : str = "Separando pedidos..."
+SUCCESS_FILE        : str = "Archivo generado."
+DOWNLOAD_BTTN_LABEL : str = "Descargar pedidos."
+PLACEHOLDER         : str = "-----"
+CONTAINER_WIDTH     : int = 500
+MAIN_COLS           : Tuple[float, ...] = (0.85,1,0.5)
 
 
 # DF Cols
@@ -25,6 +39,8 @@ COL_FAMILIA         : str = "Familia"
 COL_CODIGO          : str = "Codigo"
 COL_CODIGOS         : str = "Codigos"
 COL_DEPOSITO        : str ="Deposito"
+
+
 # REGEX
 PED_PEN             = r'Ped Pen'
 REGEX_ARTICULO      = r'^.{0}(.*?) \s{2,}'

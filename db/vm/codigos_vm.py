@@ -14,7 +14,7 @@ class CodigosVM:
                 Familia         = row["Familia"],
                 Articulo        = row["Articulo"],
                 Codigos         = row["Codigos"],
-            ) for index, row in df.iterrows()
+            ) for _, row in df.iterrows()
         ]
 
     def to_df(self, model: Sequence[CodigosModel]) -> pd.DataFrame:
