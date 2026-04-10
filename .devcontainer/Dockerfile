@@ -10,3 +10,4 @@ ENV PYTHONUNBUFFERED=1
 
 # Establecemos el directorio de trabajo dentro del contenedor
 WORKDIR /workspaces/autoparser
+USER vscode

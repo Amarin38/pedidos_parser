@@ -8,6 +8,7 @@ from constants import TipoPedidoEnum
 from ..models.codigos_model import CodigosModel
 from ..vm.codigos_vm import CodigosVM
 
+
 class CodigosRepository():
     def __init__(self):
         SessionLocal = sessionmaker(bind=db_engine)
@@ -16,6 +17,7 @@ class CodigosRepository():
     # Create -------------------------------------------
     def insert_many(self, models: List[CodigosModel]) -> None:
         try:
+            self.session.query(CodigosModel).delete()
             self.session.add_all(models)
             self.session.commit()  # <--- ESTO ES LO QUE FALTA
         except Exception as e:
@@ -56,3 +58,5 @@ class CodigosRepository():
         row = self.session.get(CodigosModel, _id)
         if row:
             self.session.delete(row)
+    
+

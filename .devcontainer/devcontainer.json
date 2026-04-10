@@ -22,5 +22,7 @@
     // 2. MAGIA AQUÍ: uv creará el entorno en el disco nativo del contenedor
     "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv"
   },
-  "postCreateCommand": "git config --global --add safe.directory '*' && uv sync"
+  "postCreateCommand": "git config --global --add safe.directory '*' && uv sync",
+  // En tu devcontainer.json
+  "remoteUser": "vscode"
 }
