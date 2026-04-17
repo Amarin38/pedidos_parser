@@ -1,28 +1,22 @@
 {
   "name": "Separar pedidos",
   "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "charliermarsh.ruff"
-      ],
-      "settings": {
-        // 1. VS Code ahora buscará Python aquí:
-        "python.defaultInterpreterPath": "/home/vscode/.venv/bin/python",
-        "python.analysis.extraPaths": ["/workspaces/separar_pedidos"]
-      }
-    }
+    "dockerfile": "Dockerfile",
   },
   "forwardPorts": [8501],
   "containerEnv": {
     "UV_LINK_MODE": "copy",
-    // 2. MAGIA AQUÍ: uv creará el entorno en el disco nativo del contenedor
-    "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv"
+    // uv creará el entorno en el disco nativo del contenedor
+    "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv",
+    // Indica a las herramientas estándar de Python cuál es el entorno activo
+    "VIRTUAL_ENV": "/home/vscode/.venv",
+  },
+  "remoteEnv": {
+    // Inyecta el entorno virtual en el PATH para que cualquier editor use este Python por defecto
+    "PATH": "/home/vscode/.venv/bin:${containerEnv:PATH}",
+    // Reemplaza el "extraPaths" seteándolo como variable de sistema
+    "PYTHONPATH": "/workspaces/separar_pedidos",
   },
   "postCreateCommand": "git config --global --add safe.directory '*' && uv sync",
-  // En tu devcontainer.json
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
 }
